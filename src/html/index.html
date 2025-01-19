@@ -4,14 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Стартовый шаблон | ВебКадеми</title>
+    <title>Гитарная школа</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
   <body class="page__body">
+    <svg style="display: none;">
+      <!-- <symbol viewBox="0 0 36 35" id="agreement__icon">
+        <path
+          d="M29.667 5.833v17.5h-17.5v-17.5h17.5Zm0-2.916h-17.5A2.925 2.925 0 0 0 9.25 5.833v17.5a2.925 2.925 0 0 0 2.917 2.917h17.5a2.925 2.925 0 0 0 2.916-2.917v-17.5a2.925 2.925 0 0 0-2.916-2.916Zm-10.982 17.5-5.06-5.105 2.042-2.056 3.019 3.034 7.48-7.54 2.042 2.056-9.522 9.61ZM6.334 8.75H3.417v20.417a2.925 2.925 0 0 0 2.916 2.916H26.75v-2.916H6.333V8.75Z"
+        />
+      </symbol> -->
+    </svg>
     @@include('blocks/header.html')
-    <main class="page-main"></main>
+    <main class="page-main">
+      <h1 class="visually-hidden">Гитарная школа</h1>
+      @@include('blocks/about.html') @@include('blocks/presentation.html')
+      @@include('blocks/guitarEducation.html')
+    </main>
     @@include('blocks/footer.html')
-    <script src="./js/index.bundle.js"></script>
+    <!-- <script src="./js/index.bundle.js"></script> -->
   </body>
 </html>
